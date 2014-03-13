@@ -20,9 +20,9 @@ var svg = d3.select("body") //defines svg, tells d3 to select the body element
   .style("stroke", color_women) //tells d3 to give all of the circles a red stroke
   .style("fill", color_men) //tells d3 to give all of the circles a pink fill
   
-  svg.append("title") //tells d3 to select the title element
+  svg.append("text") //tells d3 to select the add the text from the csv file
   .text(function(d) {return d.disease;});//tells d3 to add the text from the disease column in the csv file
-
+  .attr("y" function(d, index {return index * 10 }))//tells d3 to insert the text on the y axis * 10
 })
 
 }
