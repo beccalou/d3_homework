@@ -1,10 +1,14 @@
-Disease, Risk Women, Risk Men
-Type Two Diabetes, 12.7,  5.2
-Hypertension, 4.2, 2.6
-Myocardial infarction, 3.2, 1.5
-Cancer of the colon, 2.7, 3.0
-Angina pectoris, 1.8, 1.8
-Gallbladder disease, 1.8, 1.8
-Ovarian cancer,  1.7, N/A
-Osteoarthritis, 1.4, 1.9
-Stroke, 1.3, 1.3
+window.onload = function() {
+
+d3.csv("data.csv", function(healthData){
+
+svg.selectAll("circle").data(csv).enter()
+  .append("circle")
+  .attr("cx"), function(d) {return x(0);})
+  .attr("cy"), function(d) {return x(0);})
+  .attr("r"), function(d) {return x(0);})
+
+
+})
+
+}
