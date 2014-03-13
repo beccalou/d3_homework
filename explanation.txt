@@ -1,0 +1,4 @@
+This homework was an attempt to create a simple visualization of the incidence of 8 common diseases among men and women. The idea was to create 8 circles, with a stroke-width representing the incidence of the disease in women, and the fill representing the incidence of disease in men.  
+
+
+The comments in the code describe my general thought process and what I though each piece of code would do/produce. 
